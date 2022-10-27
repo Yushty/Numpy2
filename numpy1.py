@@ -1,47 +1,35 @@
-from array import *
-from optparse import Values
-array_num = array('i', [])
-print("Original array: "+str(array_num))
-num_list = array_num.tolist()
+import numpy as np 
+a = np.array([1,2,3,4])
+num_list =a.tolist()
 print("Convert the said array to an ordinary list with the same items:")
 print(num_list)
 
 
 import numpy as np
-arr= np.arange()
-arr= np.reshape(arr,())
-a=np.diagonal(arr,)
-result=sum(a)
-print(result)
+a = np.array([[55, 25, 15],
+                    [30, 44, 2],
+                    [11, 45, 77]])
+b = np.trace(a)
+print(b)
+
 
 import numpy as np
-a=np.arange().reshape()
-print("original matrix is :\n",a)
-m=np.trace(a)
-print("trace of matrix :", m)
+def superieur() :
+    l= np.array([[1,2,3,4], [7,9,14,2]])
+    for i in l :
+            a = [i>2]
+            print(a)
+superieur()
 
-
-def solve():
-   left_items = filter(lambda a: a < x, values)
-   return list(left_items)
-values = [1,5,8,3,6,9,12,77,55,36,2,5,6,12,87]
-x = 50
-print(solve(values, x))
 
 import numpy as np
-a = np.array([])
-np.shape(a)
-b = np.array([[],[]])
-np.shape(b)
-
-
-A=[]
-B=[]
-C=[]
-for i in range(len(A)):
-    C.append(A[i])
-    C.append(B[i])
-print(C)
+def add ():
+    l = np.array([1,2,4])
+    p = np.array ([2,4,6])
+    print(l[0]+p[0])
+    print(l[1]+p[1])
+    print(l[2]+p[2])
+add()
 
 import numpy as np
 print("Original matrix:\n")
